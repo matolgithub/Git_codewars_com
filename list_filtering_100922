@@ -1,0 +1,15 @@
+def filter_list(l):
+    # print([element for element in l if type(element) == int and element >= 0])
+
+    return [element for element in l if type(element) == int and element >= 0]
+
+
+if __name__ == '__main__':
+    filter_list()
+
+
+
+
+# def filter_list(l):
+#   'return a new list with the strings filtered out'
+#   return [i for i in l if not isinstance(i, str)]
