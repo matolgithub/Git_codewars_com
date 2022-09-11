@@ -9,7 +9,7 @@
 #     return new_string
 
 def solution(s="ghghghHdjdjdLcncn"):
-    print(''.join(' ' + c if c.isupper() else c for c in s))
+    # print(''.join(' ' + c if c.isupper() else c for c in s))
     return ''.join(' ' + c if c.isupper() else c for c in s)
 
 solution()
