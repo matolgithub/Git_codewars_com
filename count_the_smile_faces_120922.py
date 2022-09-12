@@ -11,7 +11,7 @@ def count_smileys(arr=[':)', ';(', ';}', ':-D']):
                 elif len(item) == 2:
                     if item[0] == ':' or item[0] == ';':
                         count_smileys += 1
-    print(count_smileys)
+    # print(count_smileys)
 
     return count_smileys
 
