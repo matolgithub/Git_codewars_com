@@ -11,5 +11,9 @@ def duplicate_encode(word="Ffdgh(( @"):
     return new_str
 
 
+# def duplicate_encode(word):
+#     return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
+
+
 
 duplicate_encode()
