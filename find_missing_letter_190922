@@ -1,0 +1,24 @@
+# import string
+
+# def find_missing_letter(chars=["b","c","d","f"]):
+#     alphabet = string.ascii_letters
+#     alphabet = alphabet[alphabet.index(chars[0]): alphabet.index(chars[-1]) + 1]
+#     return [letter for letter in alphabet if letter not in chars][0]
+
+
+
+
+
+import string
+
+def find_missing_letter(chars=["b","c","d","f"]):
+    return [letter for letter in string.ascii_letters[string.ascii_letters.index(chars[0]): string.ascii_letters.index(chars[-1]) + 1] if letter not in chars][0]
+
+find_missing_letter()
+
+
+# def find_missing_letter(chars):
+#     n = 0
+#     while ord(chars[n]) == ord(chars[n+1]) - 1:
+#         n += 1
+#     return chr(1+ord(chars[n]))
