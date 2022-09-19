@@ -1,0 +1,16 @@
+def calculate_1RM(w=270, r=2):
+    if r == 0:
+        result = 0
+    elif r == 1:
+        result = w
+    else:
+        result = max([
+            round(w * (1 + (r / 30))),
+            round(100 * w / (101.3 - (2.67123 * r))),
+            round(w * (r ** 0.10))
+        ])
+    print(result)
+    return result
+
+
+calculate_1RM()
